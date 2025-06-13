@@ -20,7 +20,13 @@ const loop = setInterval(() => {
 
         mario.style.animation = "none";
         mario.style.left = `${marioPosition}px`;
+
+        mario.src = ".img/game-over.png";
+        mario.style.width = "75px";
+        mario.style.marginLeft = "50px";
+
+        clearInterval(loop);
     } 
-})
+},10);
 document.addEventListener("keydown", jump);
 
